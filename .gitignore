@@ -21,9 +21,12 @@ yarn-debug.log*
 yarn-error.log*
 
 .env
+.env.hml
+.env.prd
 md
 
 *.crt
 *.csr
 *.pem
 *.srl
+

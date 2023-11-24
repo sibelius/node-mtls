@@ -9,7 +9,7 @@
   },
   "scripts": {
     "es": "ESBUILD_RUN=true node -r esbuild-register --no-experimental-fetch",
-    "clean": "rm *.crt *.csr *.pem"
+    "clean": "rm *.crt *.csr *.pem *.srl"
   },
   "dependencies": {
     "dotenv-safe": "^8.2.0",

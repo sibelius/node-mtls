@@ -18,7 +18,10 @@ const options = {
   };
 
 console.log({
-  options,
+  ...options,
+  key: options.key.toString(),
+  cert: options.cert.toString(),
+  ca: options.ca.toString(),
 });
 
 const server = https.createServer(options, app.callback());

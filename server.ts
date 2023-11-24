@@ -1,6 +1,7 @@
 import Koa from 'koa';
 import https from 'https';
 import fs from 'fs';
+import { config } from './config';
 
 const app = new Koa();
 const port = 3000;
@@ -9,9 +10,9 @@ const options = {
     // key: fs.readFileSync('server-private-key.pem', 'utf-8').toString(),
     // cert: fs.readFileSync('server.crt', 'utf-8').toString(),
     // ca: fs.readFileSync('rootCA.crt', 'utf-8').toString(),
-  key: fs.readFileSync('server-private-key.pem'),
-  cert: fs.readFileSync('server.crt'),
-  ca: fs.readFileSync('rootCA.crt'),
+  key: fs.readFileSync(config.SERVER_PRIVATE_KEY),
+  cert: fs.readFileSync(config.SERVER_CERT),
+  ca: fs.readFileSync(config.ROOT_CA_CERT),
     requestCert: true,
     rejectUnauthorized: true,
   };

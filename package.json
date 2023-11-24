@@ -12,6 +12,7 @@
     "clean": "rm *.crt *.csr *.pem"
   },
   "dependencies": {
+    "dotenv-safe": "^8.2.0",
     "isomorphic-fetch": "^3.0.0",
     "koa": "^2.14.2",
     "undici": "^5.28.0"

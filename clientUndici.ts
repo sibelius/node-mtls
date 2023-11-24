@@ -1,11 +1,12 @@
 import fs from 'fs';
 import { fetch, Agent } from 'undici'
+import { config } from './config';
 
 const apiUrl = 'https://localhost:3000'; // Replace with your server URL
 
-const clientCert = fs.readFileSync('client.crt');
-const clientKey = fs.readFileSync('client-private-key.pem');
-const rootCA = fs.readFileSync('rootCA.crt');
+const clientCert = fs.readFileSync(config.CLIENT_CERT);
+const clientKey = fs.readFileSync(config.CLIENT_PRIVATE_KEY);
+const rootCA = fs.readFileSync(config.ROOT_CA_CERT);
 
 const agent = new Agent({
   connect: {

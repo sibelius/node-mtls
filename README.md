@@ -16,8 +16,19 @@ yarn es server.ts
 
 ## Test using client
 
+node-fetch
 ```sh
-yarn es client.ts
+yarn es clientFetch.ts
+```
+
+http.get
+```sh
+yarn es clientHttp.ts
+```
+
+undici fetch
+```sh
+yarn es clientUndici.ts
 ```
 
 ## Clean certificates

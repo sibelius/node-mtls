@@ -23,13 +23,7 @@ yarn-error.log*
 .env
 md
 
-client.crt
-client.csr
-client-private-key.pem
-rootCA.crt
-rootCA.csr
-rootCA-private-key.pem
-rootCA.srl
-server.crt
-server.csr
-server-private-key.pem
+*.crt
+*.csr
+*.pem
+*.srl

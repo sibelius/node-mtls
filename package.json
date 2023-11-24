@@ -8,11 +8,12 @@
     "esbuild-register": "^3.5.0"
   },
   "scripts": {
-    "es": "ESBUILD_RUN=true node -r esbuild-register",
+    "es": "ESBUILD_RUN=true node -r esbuild-register --no-experimental-fetch",
     "clean": "rm *.crt *.csr *.pem"
   },
   "dependencies": {
     "isomorphic-fetch": "^3.0.0",
-    "koa": "^2.14.2"
+    "koa": "^2.14.2",
+    "undici": "^5.28.0"
   }
 }

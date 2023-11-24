@@ -2,7 +2,7 @@
 
 # Generate RootCA
 openssl genpkey -algorithm RSA -out rootCA-private-key.pem
-openssl req -new -key rootCA-private-key.pem -out rootCA.csr -subj "/CN=client"
+openssl req -new -key rootCA-private-key.pem -out rootCA.csr -subj "/CN=root"
 openssl x509 -req -days 3650 -in rootCA.csr -signkey rootCA-private-key.pem -out rootCA.crt
 
 # Generate client mTLS certificate

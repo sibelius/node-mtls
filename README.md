@@ -25,3 +25,10 @@ yarn es client.ts
 ```
 yarn clean
 ```
+
+## Verify rootCA and client and server
+
+```
+openssl verify -CAfile rootCA.crt client.crt
+openssl verify -CAfile rootCA.crt server.crt
+```

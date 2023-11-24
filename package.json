@@ -1,0 +1,18 @@
+{
+  "name": "node-mtls",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.19.7",
+    "esbuild-register": "^3.5.0"
+  },
+  "scripts": {
+    "es": "ESBUILD_RUN=true node -r esbuild-register",
+    "clean": "rm *.crt *.csr *.pem"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0",
+    "koa": "^2.14.2"
+  }
+}

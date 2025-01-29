@@ -1,5 +1,7 @@
 # node-mtls
 
+Article [Node mTLS from scratch](https://dev.to/woovi/node-mtls-from-scratch-3p4e)
+
 ## Generate certificates
 
 First generate rootCA, client and server certificates
